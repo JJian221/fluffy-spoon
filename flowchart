@@ -1,0 +1,20 @@
+import React, { useState } from "react";
+import { Excalidraw } from "@excalidraw/excalidraw";
+
+const FlowchartBuilder = () => {
+  const [elements, setElements] = useState([]);
+
+  return (
+    <div className="w-screen h-screen flex flex-col items-center bg-gray-100">
+      <h1 className="text-2xl font-bold mt-4">Logistics Flowchart Builder</h1>
+      <div className="border w-4/5 h-4/5 mt-4 bg-white shadow-lg rounded-lg">
+        <Excalidraw
+          initialData={{ elements }}
+          onChange={(els) => setElements(els)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default FlowchartBuilder;
