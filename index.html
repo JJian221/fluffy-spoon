@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluffy-Spoon</title>
-    <style>
-        body {
-            background-color: #FFEB85; /* Yellow butter color */
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .oval {
-            display: inline-block;
-            width: 350px;
-            height: 200px;
-            background-color: gold;
-            border-radius: 50%;
-            color: white;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 200px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .content {
-            margin-top: 50px;
-            font-size: 20px;
-            color: #333;
-        }
-        .assignments {
-            margin-top: 50px;
-            font-size: 18px;
-        }
-        .assignments a {
-            display: block;
-            color: #333;
-            text-decoration: none;
-            margin: 5px 0;
-            cursor: pointer;
-        }
-        .assignments a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            font-size: 16px;
-            font-weight: bold;
-            color: darkgreen;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluffy-Spoon</title>
+  <style>
+    body {
+      background-color: #FFEB85;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .oval {
+      display: inline-block;
+      width: 350px;
+      height: 200px;
+      background-color: gold;
+      border-radius: 50%;
+      color: white;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 200px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .content {
+      margin-top: 50px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .assignments {
+      margin-top: 50px;
+      font-size: 18px;
+    }
+
+    .assignment-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .assignment-box a {
+      width: 300px;
+      padding: 15px 10px;
+      background-color: white;
+      border: 2px solid #ffd700;
+      border-radius: 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .assignment-box a:hover {
+      background-color: #fff8dc;
+      border-color: orange;
+      transform: scale(1.03);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      color: darkgreen;
+    }
+  </style>
 </head>
 <body>
-    <div class="oval">Fluffy-Spoon</div>
-    <div class="content">
-        <p>Welcome to Fluffy-Spoon! A delight in every bite.</p>
+  <div class="oval">Fluffy-Spoon</div>
+  <div class="content">
+    <p>Welcome to Fluffy-Spoon! A delight in every bite.</p>
+  </div>
+  <div class="assignments">
+    <h2>Assignments</h2>
+    <div class="assignment-box">
+      <a href="ABC Classification.htm" onclick="alert('ABC Classification clicked!')">ABC Classification</a>
+      <a href="MMermaid.html" onclick="alert('TSP Game clicked!')">TSP Game</a>
+      <a href="Design Thinking Activity - Mermaid TSP game.pdf" onclick="alert('Design Thinking Activity - Mermaid TSP game clicked!')">Design Thinking Activity</a>
+      <a href="image001.png" onclick="alert('Flow chart clicked!')">Flow chart</a>
+      <a href="Week 4 - Bullwhip Data (Demo) - Sheet1.xls" onclick="alert('Bullwhip Data clicked!')">Bullwhip Data</a>
+      <a href="Flow chart of Amazon.html" onclick="alert('Flow chart of Amazon clicked!')">Flow chart of Amazon</a>
+      <a href="README.md" onclick="alert('README clicked!')">README</a>
     </div>
-    <div class="assignments">
-        <h2>Assignments</h2>
-        <a href="ABC Classification.htm" onclick="alert('ABC Classification clicked!')">ABC Classification</a>
-        <a href="MMermaid.html" onclick="alert('TSP Game clicked!')">TSP Game</a>
-        <a href="Design Thinking Activity - Mermaid TSP game.pdf" onclick="alert('Design Thinking Activity - Mermaid TSP game clicked!')">Design Thinking Activity - Mermaid TSP game</a>
-        <a href="image001.png" onclick="alert('Flow chart clicked!')">Flow chart</a>
-        <a href="Week 4 - Bullwhip Data (Demo) - Sheet1.xls" onclick="alert('Bullwhip Data clicked!')">Bullwhip Data</a>
-        <a href="Flow chart of Amazon.html" onclick="alert('Flow chart of Amazon clicked!')">Flow chart of Amazon</a>
-        <a href="READMELogistics_UPDATED417917_.html" onclick="alert('README clicked!')">README</a>
-    </div>
-    <div class="footer">Jian Lee</div>
+  </div>
+  <div class="footer">Jian Lee</div>
 </body>
 </html>
